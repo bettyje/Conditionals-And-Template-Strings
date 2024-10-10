@@ -1,4 +1,4 @@
-function age() {
+function checkAccess(age) {
     if (age === null || age === undefined ) {
         return "Invalid age";
     }
@@ -6,7 +6,7 @@ function age() {
     else if(age < 18) {
         return "Access denied. You are too young.";
     }
-    else if( age <= 18 && age < 65){
+    else if( age >= 18 && age < 65){
         return "Access granted";  
     }
 
